@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼관련예제</title>
+</head>
+<body>
+    <h1>폼관련 예제 1</h1>
+    <fieldset>
+        <legend>납품자 정보</legend>
+        <form action="Name" method="post">
+        <label for="Name">1. 납품자명 : </label>
+        <input type="text" id="Name" name="name">
+        </form>
+        
+        <form action="Email" method="post">
+            <label for="Name">2. email : </label>
+            <input type="email" placeholder="answer@naver.com">
+            </form>
+
+            <form action="Homepage" method="post">
+                <label for="url">3. 홈페이지 : </label>
+                <input type="url" value="http://">
+                </form>
+                <form action="지역" method="post">
+                    <label>4. 지역 : </label>
+                    <select>
+                        <option>서울</option>
+                        <option>대구</option>
+                        <option>부산</option>
+                    </select>
+                </form>
+    </fieldset>
+    <fieldset>
+        <legend>납품 정보</legend>
+        <form action="Product" method="post">
+            <li><label for="Product">상품명 : </label><input type="Product"></li>
+        </form>
+        <form action="Quantity" method="post">
+            <li><label for="Quantity">납품 수량 : </label><input type="text" placeholder="최소 100"></li>
+        </form>
+        <form action="Grade" method="post">
+            <li><label for="Grade">납품 등급 : </label><input type="range"></li>
+        </form>
+        <form action="Matters" method="post">
+            <li><label for="Matters">기타사항 : <textarea rows="4" cols="50"></label></li>
+        </form>
+        <button>send message</button>
+    </fieldset>
+</body>
+</html>
