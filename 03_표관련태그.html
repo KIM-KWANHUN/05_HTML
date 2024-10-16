@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="항" content="width=device-width, initial-scale=1.0">
+    <title>하이미디어</title>
+</head>
+<body>
+    <h1>기본적인 표 만들기</h1>
+    <table border="1">
+        <!-- border 특징은 1픽셀만큼에 경계선을 만들어준다. 색깔은 검정 -->
+        <!-- 가상의 테이블 생성 -->
+        <tr>
+            <!-- 테이블의 행 -->
+             <!-- td는 행에 들어갈 데이터 -->
+             <td>1</td>
+             <td>2</td>
+             <td>3</td>
+        </tr>
+        <tr>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+        </tr>
+        <tr>
+             <td>7</td>
+             <td>8</td>
+             <td>9</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- comment. 
+        표를 만드는 태그는 table, tr, th, td 가 있다.
+        table : 기본적인 표를 생성 틀을 만들어준다.
+        tr : 표의 행을 나타내는 태그
+        th : 표의 제목을 나타내는 태그
+        td : 표의 들어갈 데이터를 나타내는 태그
+    -->
+    <table border="1">
+        <tr>
+            <caption><b>메뉴 리스트</b></caption>
+            <!-- caption : 표에대한 설명 -->
+            <tr>
+                <th>메뉴 이름</th>
+                <th>메뉴 가격</th>
+                <th>판매 상태</td>
+            </tr>
+        </tr>
+        <tr>
+            <td >과메기떡</td>
+            <td >3000</td>
+            <td >Y</td>
+        </tr>
+        <tr>
+            <td >과메기떡</td>
+            <td >3000</td>
+            <td >Y</td>
+        </tr>
+        <tr>
+            <td >과메기떡</td>
+            <td >3000</td>
+            <td >Y</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>표의 행과 열 합치기</h1>
+    <!-- td 태그의 속성을 이용해서 행과 열을 합칠 수 있다.
+         colspan : 열 합치기
+         rowspan : 행 합치기 
+    -->
+    <table border="1">
+        <caption>회원 정보 리스트</caption>
+        <tr>
+            <!-- width : 너비 height : 높이 -->
+            <td colspan="2" rowspan="2" width="130px" height="150px">사진</td>
+            <td width="80px">이름</td>
+            <td width="200px"></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="70px" height="50px">주소</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
